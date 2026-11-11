@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+
+# Optional API dependencies
+# fastapi
+# uvicorn
+# python-multipart
+
+# Optional alternative generator
+# sdv

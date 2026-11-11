@@ -1,0 +1,44 @@
+{
+  "rows": {
+    "real": 200,
+    "synthetic": 200
+  },
+  "similarity": {
+    "numeric_ks_statistic": {
+      "age": 0.04,
+      "study_hours_per_day": 0.04,
+      "attendance_percent": 0.035,
+      "monthly_expense_inr": 0.05,
+      "exam_score_percent": 0.06
+    },
+    "categorical_total_variation_distance": {
+      "stream": 0.0050000000000000044,
+      "city": 0.03499999999999998,
+      "transport_mode": 0.050000000000000024,
+      "part_time_job": 0.04500000000000001
+    },
+    "correlation_matrix_difference": {
+      "frobenius_difference": 0.3524840042492569,
+      "mean_absolute_difference": 0.04651489590342262,
+      "max_absolute_difference": 0.18166887533868603
+    }
+  },
+  "privacy": {
+    "exact_match_rate": 0.0,
+    "nearest_neighbour": {
+      "median_real_to_real_distance": 1.7193339251773452,
+      "median_synthetic_to_real_distance": 1.6952289093599977,
+      "distance_ratio": 0.9859800266461554
+    }
+  },
+  "interpretation": {
+    "ks_statistic": "Lower is more similar; 0 means identical empirical distributions.",
+    "total_variation_distance": "Lower is more similar; 0 means identical category frequencies.",
+    "exact_match_rate": "Lower means fewer synthetic rows copied exactly from the source.",
+    "nearest_neighbour_distance_ratio": "Synthetic-to-real median nearest-neighbour distance divided by the real-to-real equivalent. Values near or below 1 deserve privacy review."
+  },
+  "generation": {
+    "method": "copula",
+    "seed": 42
+  }
+}
